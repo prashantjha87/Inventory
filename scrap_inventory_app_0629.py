@@ -201,13 +201,13 @@ with col_left:
 
         col1, col2 = st.columns([2, 1])
         with col1:
-            required_width = st.number_input('Required Width', min_value=1, step=1)
+            required_width = st.number_input('Required Width', min_value=1, max_value=1250, step=1)
         with col2:
             width_unit = st.selectbox('Width Unit', ['mm', 'cm', 'inch', 'feet', 'meter', 'sut'])
 
         col3, col4 = st.columns([2, 1])
         with col3:
-            required_length = st.number_input('Required Length', min_value=1, step=1)
+            required_length = st.number_input('Required Length', min_value=1, max_value=2500, step=1)
         with col4:
             length_unit = st.selectbox('Length Unit', ['mm', 'cm', 'inch', 'feet', 'meter', 'sut'])
 
